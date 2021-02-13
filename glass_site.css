@@ -4,7 +4,35 @@
     box-sizing: border-box;
 }
 
+p {
+    color: #9e6793;
+    font-weight: 10;
+    font-size: 14px;
+    opacity: 0.8; 
+}
+
+h1 {
+    color: #c494eb;
+    font-weight: 600;
+    font-size: 35px;
+    opacity: 0.8;
+}
+
+h2{
+    color: #E699D8;
+    font-weight: 10;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+h3{
+    color: #C996F2;
+    font-weight: 600;
+    opacity: 0.8;
+    font-size: 23px;
+}
 main {
+    font-family: 'Fredoka One', cursive;
     min-height: 100vh;
     background: linear-gradient(to right top, #E699D8, #F29B96);
     display: flex;
@@ -76,10 +104,45 @@ main {
     justify-content: space-evenly;
     text-align: center;
     background: linear-gradient(to right top, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-    border-radius: 20px;
+    border-radius: 2rem;
+}
+
+.links {
+    display: flex;
+    margin: 0rem 0rem;
+    padding: 0rem 4rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links h2{
+    padding: 0rem 2rem;
 }
 
 .things {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
 }
 
+.github {
+    background: linear-gradient(to right top, #E699D8, #F29B96);
+    border-radius: 20px;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    width: 60%;
+}
+
+.github img{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+
+
+.github h2{
+    width: 60%;
+    color: white;
+}
