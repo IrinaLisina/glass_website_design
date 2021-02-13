@@ -16,13 +16,11 @@ main {
     background: white;
     min-height: 80vh;
     width: 60%;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    background: linear-gradient(to right top, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
     border-radius: 20px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    display: flex;
     z-index: 2;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(1rem);
 }
 
 .bubble1{
@@ -68,5 +66,20 @@ main {
     top: 4%;
     right: 5%;
     border-radius: 50%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right top, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 20px;
+}
+
+.things {
+    flex: 2;
 }
 
