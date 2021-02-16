@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #998b9b;
+    font-weight: 10;
+    font-size: 14px;
+    opacity: 0.8; 
+}
+
+h1 {
+    color: #998b9b;
+    font-weight: 600;
+    font-size: 35px;
+    opacity: 0.8;
+}
+
+h2{
+    color: #e6cfdd;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+h3{
+    color: #998b9b;
+    font-weight: 600;
+    opacity: 0.8;
+    font-size: 20px;
+}
+main {
+    font-family: 'Fredoka One', cursive;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #d5cce4, #F29B96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right top, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 20px;
+    display: flex;
+    z-index: 2;
+    backdrop-filter: blur(1rem);
+}
+
+.bubble1{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.3));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    border-radius: 50%;
+}
+
+.bubble2{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.3));
+    height: 26rem;
+    width: 26rem;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    border-radius: 50%;
+}
+
+
+.bubble3{
+    background: white;
+    background: linear-gradient(to right top, rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    border-radius: 50%;
+}
+
+.bubble4{
+    background: white;
+    background: linear-gradient(to left bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    border-radius: 50%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right top, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 20px;
+    max-width: 15rem;
+}
+
+button {
+    border: none;
+    font-family: 'Fredoka One', cursive;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+#hovernow {
+
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+    transition: box-shadow;
+  }
+  
+#hovernow:hover {
+    box-shadow: 0 2px 7px rgba(184, 183, 183, 0.8);
+  }
+
+.user {
+    border-radius: 10rem;
+    background: linear-gradient(to right top, rgba(255, 230, 246,0.5), rgba(230, 207, 221,0.4));
+    padding: 1.3rem;
+}
+
+.links {
+    display: flex;
+    margin: 0rem 0rem;
+    padding: 0rem 4rem;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right top, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    width: 60%;
+}
+
+.links h2{
+    padding: 0rem 2rem;
+    
+}
+
+.things {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+}
+
+.github {
+    background: linear-gradient(to right top, #E699D8, #F29B96);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    width: 60%;
+}
+
+.github img{
+    position: absolute;
+    top: 25%;
+    right: 15%;
+}
+
+
+.github h2{
+    width: 70%;
+    color: white;
+}
+
+/* THINGS */
+
+.status {
+    margin-bottom: 1rem;
+}
+
+.things {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+#Title {
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0rem 2rem ;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255,255,255,0.3), rgba(255,255,255,0.5) );
+    border-radius: 1rem;
+    margin: 1rem 2rem ;
+    padding: 1rem 4.5rem ;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.progress {
+    background: linear-gradient(to right top, #E699D8, #F29B96);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 60%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    background: linear-gradient(to right top, #E699D8, #F29B96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
